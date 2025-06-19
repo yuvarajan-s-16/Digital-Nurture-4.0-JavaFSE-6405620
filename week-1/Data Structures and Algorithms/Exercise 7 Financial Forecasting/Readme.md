@@ -18,7 +18,7 @@ It simplifies many real-world problems, especially those with repetitive calcula
 
 To forecast future investment value, we define a recursive method:
 
-```java
+java
 public static double forecastRecursive(int year, double initialAmount, double growthRate)
 
 ## 3. Analysis
