@@ -1,0 +1,13 @@
+CREATE OR REPLACE FUNCTION HasSufficientBalance(
+    accID IN NUMBER,
+    amt IN NUMBER
+) RETURN BOOLEAN IS
+    bal NUMBER;
+BEGIN
+    SELECT Balance INTO bal FROM Accounts WHERE AccountID = accID;
+    RETURN bal >= amt;
+EXCEPTION
+    WHEN NO_DATA_FOUND THEN
+        RETURN FALSE;
+END;
+/
