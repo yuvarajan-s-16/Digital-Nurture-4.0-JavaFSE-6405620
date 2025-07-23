@@ -1,0 +1,13 @@
+.container {
+  border: 2px solid #000;
+  padding: 20px;
+  margin: 30px auto;
+  width: 50%;
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  border-radius: 8px;
+}
+
+h2 {
+  color: #2e6da4;
+}
